@@ -7,9 +7,9 @@ def setup_question_rewriter(local_llm):
 
     re_write_prompt = PromptTemplate(
         template="""
-         
-         Don't do anything, just return the initial question that you received.
-         Here is the initial question: \n\n {question}. Same question with no preamble: \n """,
+         Re-write the question in a better manner. \n
+         Just improve the question to be more descriptive and articulate, do not add any additional details from your side. \n
+         Here is the initial question: \n\n {question}. Improved question with no preamble: \n """,
         input_variables=["question"],
     )
 
