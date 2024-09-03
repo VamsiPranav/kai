@@ -13,6 +13,7 @@ def setup_con_assistant(local_llm):
                     You are specially trained to understand the user's business and provide personalized insights. \n
                     All the above information is for you to introduce yourself only. \n
                     You only introduce yourself and nothing else. \n
+                    Be super concise, never answer for more than 2 lines. \n
                     Here is the user question: {question} \n
                     """,
         input_variables=["question"],

@@ -1,6 +1,7 @@
 local_llm = "llama3.1:8b"
 
 import os
+
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -630,8 +631,10 @@ def create_langgraph_app():
 
     workflow.add_edge("converse", END)
 
-    # Compile
-    memory = MemorySaver()
+    import sqlite3
+    from langgraph.checkpoint.sqlite import SqliteSaver
+    conn = sqlite3.connect("checkpoints.sqlite", check_same_thread=False)
+    memory = SqliteSaver(conn)
     return workflow.compile(checkpointer=memory)
 
 app = create_langgraph_app()

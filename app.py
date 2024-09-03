@@ -15,7 +15,7 @@ def chat():
     question = data.get('question')
 
     # Process the question using your LangGraph app
-    config = {"configurable": {"thread_id": "3"}}
+    config = {"configurable": {"thread_id": "1"}}
     result = langgraph_app.invoke({"question": question}, config)
 
     # Extract the final generation from the result
