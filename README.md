@@ -1,6 +1,6 @@
 # kai
 
-Find a detailed explain of the project in our team's confluence page [here](https://confluence.oraclecorp.com/confluence/display/DDA/TEAM+4%3A+GenAI+Hackathon+Design+Document).
+Find a detailed explaination of the project in our team's confluence page [here](https://confluence.oraclecorp.com/confluence/display/DDA/TEAM+4%3A+GenAI+Hackathon+Design+Document).
 
 How to run on your local:
 1. Clone the project at the location you want with the command: 
