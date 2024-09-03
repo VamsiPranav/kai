@@ -1,0 +1,82 @@
+Barcode,Product Name,Product Brand,Category,MRP
+9550889811760,Atta,Aashirvaad,Groceries,480.18
+7534112261015,Atta,Fortune,Groceries,295.41
+6695212836394,Atta,Patanjali,Groceries,355.52
+5656234314111,Rice,India Gate,Groceries,497.03
+1489716693439,Rice,Daawat,Groceries,397.04
+3442852944505,Rice,Kohinoor,Groceries,240.4
+7438552944490,Dal,Tata Sampann,Groceries,215.26
+7477584351590,Dal,24 Mantra Organic,Groceries,309.82
+8060776080538,Dal,Rajdhani,Groceries,432.33
+3046223091366,Cooking Oil,Fortune,Groceries,373.29
+6768130244551,Cooking Oil,Saffola,Groceries,418.41
+7909647285748,Cooking Oil,Dhara,Groceries,435.69
+2646305542863,Sugar,Madhur,Groceries,83.69
+4266329572283,Sugar,Uttam,Groceries,494.87
+1081846168108,Sugar,Parry's,Groceries,431.55
+4264705587768,Salt,Tata,Groceries,305.69
+5966087203573,Salt,Aashirvaad,Groceries,467.15
+1110475018705,Salt,Annapurna,Groceries,83.67
+5756935329189,Milk,Amul,Dairy,412.49
+1440710811309,Milk,Mother Dairy,Dairy,25.28
+8952577124826,Milk,Nandini,Dairy,112.68
+3348353436381,Curd,Amul,Dairy,337.58
+9471443645365,Curd,Mother Dairy,Dairy,492.25
+5112203895591,Curd,Nestle,Dairy,92.99
+3019733334840,Paneer,Amul,Dairy,160.71
+7538675410397,Paneer,Mother Dairy,Dairy,220.23
+1319495204239,Paneer,Gowardhan,Dairy,478.65
+9320526500374,Butter,Amul,Dairy,215.58
+7417081143053,Butter,Mother Dairy,Dairy,46.68
+9792841352355,Butter,Britannia,Dairy,76.59
+2005707746631,Cheese,Amul,Dairy,488.48
+6874779065864,Cheese,Britannia,Dairy,413.01
+1374644357806,Cheese,Go,Dairy,202.07
+9366403560281,Biscuits,Parle,Snacks,398.69
+9341222702392,Biscuits,Britannia,Snacks,207.46
+5723787941699,Biscuits,Sunfeast,Snacks,292.84
+4799124724315,Chips,Lay's,Snacks,181.18
+4243802214885,Chips,Kurkure,Snacks,321.05
+5334981206381,Chips,Bingo,Snacks,328.76
+6079913241894,Namkeen,Haldiram's,Snacks,479.81
+2676489428461,Namkeen,Bikaji,Snacks,56.63
+7118631998839,Namkeen,Balaji,Snacks,114.2
+3000161243260,Chocolates,Cadbury,Snacks,242.45
+8493556002921,Chocolates,Nestle,Snacks,403.34
+9099746266551,Chocolates,Amul,Snacks,445.68
+7009664627837,Tea,Tata Tea,Beverages,292.8
+8562587170545,Tea,Red Label,Beverages,327.95
+4852979716602,Tea,Taj Mahal,Beverages,53.02
+2081796341037,Coffee,Nescafe,Beverages,210.19
+7784851719923,Coffee,Bru,Beverages,21.64
+1530281751828,Coffee,Continental,Beverages,174.5
+2764870889303,Soft Drinks,Coca-Cola,Beverages,485.66
+2974785865598,Soft Drinks,Pepsi,Beverages,311.37
+8068700962471,Soft Drinks,Thumbs Up,Beverages,308.95
+1904792486473,Fruit Juice,Real,Beverages,485.11
+4651387619190,Fruit Juice,Tropicana,Beverages,181.26
+6400454451965,Fruit Juice,B Natural,Beverages,424.14
+3801660182303,Soap,Lux,Personal Care,355.28
+2168494776151,Soap,Dettol,Personal Care,308.87
+1366803933780,Soap,Lifebuoy,Personal Care,220.48
+6373646879188,Shampoo,Clinic Plus,Personal Care,289.95
+3922480347697,Shampoo,Head & Shoulders,Personal Care,341.62
+7193208938982,Shampoo,Pantene,Personal Care,75.87
+8650517934553,Toothpaste,Colgate,Personal Care,363.42
+3270110394259,Toothpaste,Pepsodent,Personal Care,276.68
+9133603908014,Toothpaste,Dabur,Personal Care,348.85
+7111402598169,Face Cream,Fair & Lovely,Personal Care,253.79
+8986011122048,Face Cream,Ponds,Personal Care,148.61
+5524031117940,Face Cream,Himalaya,Personal Care,310.66
+5573515979800,Detergent,Surf Excel,Household,279.12
+9882839546088,Detergent,Ariel,Household,245.8
+8118777908898,Detergent,Tide,Household,28.11
+4426249772873,Floor Cleaner,Lizol,Household,50.01
+1885386949733,Floor Cleaner,Domex,Household,55.98
+7442652072221,Floor Cleaner,Harpic,Household,325.21
+1921407170452,Mosquito Repellent,Good Knight,Household,121.15
+1887140245119,Mosquito Repellent,All Out,Household,47.43
+8295015923248,Mosquito Repellent,Mortein,Household,460.74
+2668380592920,Air Freshener,Odonil,Household,425.92
+9679955033493,Air Freshener,Godrej Aer,Household,31.17
+4887387328514,Air Freshener,Ambi Pur,Household,59.52

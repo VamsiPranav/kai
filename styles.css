@@ -1,0 +1,214 @@
+@font-face {
+  font-family: GeneralSansMedium;
+  src: url(fonts/GeneralSans-Medium.woff);
+}
+
+@font-face {
+  font-family: GeneralSansRegular;
+  src: url(fonts/GeneralSans-Regular.woff);
+}
+
+@font-face {
+  font-family: GeneralSansBold;
+  src: url(fonts/GeneralSans-Semibold.woff);
+}
+
+html {
+    height: 100vh;
+    overflow: hidden;
+    padding-bottom: 44px;
+}
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(#F5F9F9, #EFF5F5);
+}
+main {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 0px 32px;
+    border-bottom-style: solid;
+    border-color: rgba(0,0,0,0.1);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.nav-buttons button {
+    margin-left: 0px;
+    padding: 12px 20px;
+    background-color: #204447;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: GeneralSansMedium;
+    font-size: 13px;
+}
+
+#generateReport:disabled {
+    background-color: #4D696C;
+}
+
+#toggleInsights {
+    background-color: #ffffff;
+    color: black;
+}
+
+#quickInsights {
+    display: flex;
+    position: absolute;
+    width: 100vw;
+    overflow: hidden;
+    justify-content: flex-start;
+    padding: 32px 20px 32px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 50px 200px rgba(239,245,245,1);
+}
+
+.insight-card {
+    text-align: left;
+    padding: 28px;
+    border-style: solid;
+    border-color: rgba(0,0,0,0.1);
+    border-radius: 8px;
+    width: 100%;
+    margin-right: 20px;
+}
+
+.insight-card h3 {
+    font-size: 14px;
+    color: #666;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: GeneralSansMedium;
+    font-size: 15px;
+}
+
+.insight-card p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+    font-family: GeneralSansBold;
+    font-size: 24px;
+}
+
+.hidden {
+    display: none;
+    position: absolute;
+}
+
+.chat-container {
+    max-height: 90%;
+    width: 800px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#chatHistory {
+    max-height: 92%;
+    overflow-y: auto;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.input-area {
+    display: flex;
+    height: auto;
+    background-color: #ffffff;
+    padding: 20px 20px;
+    border-radius: 12px 12px 0px 0px;
+    box-shadow: 0 -4px 25px rgba(0,0,0,0.025);
+}
+
+#userInput {
+    border-style: none;
+    flex-grow: 1;
+    font-family: GeneralSansMedium;
+    font-size: 15px;
+}
+#userInput:active {
+    border-style: none;
+}
+#userInput:focus {
+    border-style: solid;
+    border-width: 0px;
+}
+
+#sendButton {
+    height: 32px;
+    width: 32px;
+    padding: 8px 8px;
+    background-color: #204447;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.arrow_img {
+    height: 16px;
+    width: 16px;
+    margin: 0px;
+}
+
+.message {
+    width: auto;
+    max-width: 60%;
+    margin-bottom: 16px;
+    padding: 12px;
+    border-radius: 10px;
+    line-height: 1.4;
+    font-family: GeneralSansMedium;
+    font-size: 15px;
+}
+
+.user {
+    width: auto;
+    max-width: 50%;
+    border-radius: 8px;
+    background-color: #D6E4E5;
+    margin-left: auto;
+    text-align: right;
+}
+
+.bot {
+    width: auto;
+    border-radius: 8px;
+    background-color: #FFFFFF;
+}
+.hidden {
+    display: none !important;
+}
+.dash_logo {
+    height: 20px;
+}
+
+.metric_container {
+    display: flex;
+    width: 98.5%;
+}

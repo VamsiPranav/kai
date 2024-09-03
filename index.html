@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+    <script src="pdfGenerator.js"></script>
+    <script src="app.js"></script>
+
+</head>
+<body>
+    <main>
+        <div>
+            <nav>
+                <div class="logo">
+                    <img class="kai_logo" src="images/kai.svg" alt="Kai">
+                </div>
+                <div class="nav-buttons">
+                    <button id="generateReport">Generate Insights Report</button>
+                    <button id="toggleInsights">Show Quick Insights</button>
+                </div>
+            </nav>
+
+            <div id="quickInsights" class="hidden">
+                <div class="metric_container">
+                    <div class="insight-card">
+                        <h3>Average Shelf Life Score</h3>
+                        <p id="shelfLifeScore">0.34</p>
+                    </div>
+                    <div class="insight-card">
+                        <h3>Average Product Viability Score</h3>
+                        <p id="viabilityScore">0.87</p>
+                    </div>
+                    <div class="insight-card">
+                        <h3>Revenue of this 15-day cycle</h3>
+                        <p id="currentRevenue">₹56,767</p>
+                    </div>
+                    <div class="insight-card">
+                        <h3>Predicted Revenue of next 15-day cycle</h3>
+                        <p id="predictedRevenue">₹56,767</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="chat-container">
+            <div id="chatHistory"></div>
+            <div class="input-area">
+                <input type="text" id="userInput" placeholder="Start Chatting">
+                <button id="sendButton">
+                    <img class="arrow_img" src="images/arrow-right.svg" alt="Send">
+                </button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
