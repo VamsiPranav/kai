@@ -10,7 +10,7 @@ from langchain_anthropic import ChatAnthropic
 llm = ChatAnthropic(
     model="claude-3-5-sonnet-20240620",
     temperature=0,
-    max_tokens=1024,
+    max_tokens=2048,
     timeout=None,
     max_retries=2,
     # other params...
