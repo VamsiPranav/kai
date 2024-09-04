@@ -8,14 +8,12 @@ window.generateAndDownloadPDF = async function(jsonData) {
   const pageHeight = pdf.internal.pageSize.getHeight();
   let yOffset = 10
 
-  pdf.setFont("GeneralSans", "bold");
-  pdf.setFontSize(16);
+  pdf.setFontSize(18);
 
   pdf.text('Insights Report', pageWidth / 2, yOffset, { align: 'center' });
   yOffset += 10;
 
   pdf.setFontSize(12);
-  pdf.setFont("GeneralSans", "normal");
   for (let key in jsonData) {
 
     const value = jsonData[key].toString();
