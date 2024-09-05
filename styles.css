@@ -201,6 +201,17 @@ nav {
     border-radius: 8px;
     background-color: #FFFFFF;
 }
+
+.graph-container {
+    width: 100%;
+    max-width: 60%;
+    height: 400px;
+    padding: 12px;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+}
+
+
 .hidden {
     display: none !important;
 }

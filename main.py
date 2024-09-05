@@ -635,6 +635,8 @@ def create_langgraph_app():
     from langgraph.checkpoint.sqlite import SqliteSaver
     conn = sqlite3.connect("checkpoints.sqlite", check_same_thread=False)
     memory = SqliteSaver(conn)
+    print("----MEMORY-----")
+    print(memory)
     return workflow.compile(checkpointer=memory)
 
 app = create_langgraph_app()

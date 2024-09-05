@@ -10,7 +10,7 @@ from langchain_anthropic import ChatAnthropic
 llm = ChatAnthropic(
     model="claude-3-5-sonnet-20240620",
     temperature=0,
-    max_tokens=1024,
+    max_tokens=2048,
     timeout=None,
     max_retries=2,
     # other params...
@@ -56,6 +56,13 @@ def setup_general_q_agent():
                  Discounts can be suggested based on the Minimum Price values. \n
                  Combos can be suggested based on what products are bought along with a said product. \n
                  You could suggest similar products that could act as replacements to a said product. \n
+                 
+                 You need to make a decision if the user question needs a graph, If the question requires a graphical representation, you can provide graph data in JSON format. \n
+                 Enclose the JSON data within ```json and ``` tags. The JSON should include the graph type and necessary data points. \n
+                 If you are generating a graph, make sure that the data is correct. \n
+                 If you are generating a graph, always add the graph at the end of the response. \n
+                 Never mention the word 'JSON' in your response outside the graph. \n
+
 
                  Whenever you refer to a certain product always use the Nomenclature - "Product Brand Product Name". \n
                  Whenever you refer to numbers, always only mention them upto 2 significant decimals, no more than that. \n

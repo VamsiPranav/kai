@@ -1,6 +1,8 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from main import app as langgraph_app
+import json
+import re
 
 
 
@@ -20,7 +22,25 @@ def chat():
 
     # Extract the final generation from the result
     final_generation = result['generation']
+
+    json_match = re.search(r'```json\n(.*?)```', final_generation, re.DOTALL)
+
+    if json_match:
+        json_str = json_match.group(1)
+        try:
+            graph_data = json.loads(json_str)
+            final_generation = re.sub(r'```json\n.*?```', '', final_generation, flags=re.DOTALL).strip()
+
+            return jsonify({
+                "response": final_generation,
+                "graph_data": graph_data
+            })
+        except json.JSONDecodeError:
+            print("Error decoding JSON data")
+
     return jsonify({"response": final_generation})
+
+    # return jsonify({"response": final_generation})
 
 @app.route('/quick-insights', methods=['GET'])
 def quick_insights():
@@ -35,7 +55,7 @@ def quick_insights():
 
 @app.route('/generate-report', methods=['GET'])
 def generate_report():
-    generate_msg = "Give a complete overview of the store, present all analysis."
+    generate_msg = "Give a complete overview of the store, present all analysis. And show relevant graphs or charts"
     config = {"configurable": {"thread_id": "4"}}
     result = langgraph_app.invoke({"question": generate_msg}, config)
 

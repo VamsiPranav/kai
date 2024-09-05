@@ -74,6 +74,12 @@ def setup_rag_chain():
                  If a certain product is in low quantity relative to its demand, you should suggest similar items that this product can be substituted with. \n                 
                  
                  Format your answer well with sections for each of the above. \n
+                 
+                 You need to make a decision if the user question needs a graph, If the question requires a graphical representation, you can provide graph data in JSON format. \n
+                 Enclose the JSON data within ```json and ``` tags. The JSON should include the graph type and necessary data points. \n
+                 If you are generating a graph, make sure that the data is correct. \n
+                 If you are generating a graph, always add the graph at the end of the response. \n
+                 Never mention the word 'JSON' in your response outside the graph. \n
                 
                  Question: {question} 
                  Context: {context} 
