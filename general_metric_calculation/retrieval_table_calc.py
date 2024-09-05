@@ -2,6 +2,8 @@ import pandas as pd
 import ast
 import logging
 import numpy as np
+from datetime import datetime, timedelta
+
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -10,6 +12,7 @@ def load_and_prepare_data():
     computation_df = pd.read_csv('../data/computation_table.csv')
     demand_df = pd.read_csv('../data/15_day_demand_prediction_windows.csv')
     associations_df = pd.read_csv('../data/product_associations.csv')
+    sales_df = pd.read_csv('../data/historic_daily_sales.csv')
 
     logging.info(f"Loaded computation_df with {len(computation_df)} rows")
     logging.info(f"Loaded demand_df with {len(demand_df)} rows")
@@ -40,6 +43,23 @@ def load_and_prepare_data():
     merged_df['1-15 Days'] = np.round(merged_df['1-15 Days'] / 6).astype(int)
     merged_df['Stock wrt Demand'] = merged_df['Quantity Remaining'] / merged_df['1-15 Days']
     logging.info(f"Merged dataframe created with {len(merged_df)} rows")
+
+    current_date = datetime(2024, 12, 31)
+
+    def conv_string(x):
+        date_string = x.strftime("%Y") + "-" + x.strftime("%m") + "-" + x.strftime("%d")
+        return date_string
+
+    start_date = current_date - timedelta(days=14)
+
+    barcodes = sales_df['Barcode']
+    new_sales_df = sales_df.loc[:, conv_string(start_date):conv_string(current_date)]
+    new_sales_df = new_sales_df.join(barcodes)
+
+    new_sales_df = new_sales_df.set_index('Barcode').sum(axis=1).reset_index()
+    new_sales_df.columns = ['Barcode', 'Past 15 Day Sales']
+
+    merged_df = pd.merge(merged_df, new_sales_df, on='Barcode', how='left')
 
     return merged_df
 

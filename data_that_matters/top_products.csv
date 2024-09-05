@@ -1,6 +1,6 @@
-Product Brand_x,Product Name_x,Quantity Remaining_x,MRP_x,Weighted Cost Price_x,Minimum Price_x,Weighted Shelf Score_x,Viability Score_x,1-15 Days_x,Together Bought With_x,Similar Products_x,Stock wrt Demand_x
-Saffola,Cooking Oil,43,418.41,308.98140490081676,324.4304751458576,0.8071285197092882,0.3624319796379563,15,"Nestle Chocolates, Ariel Detergent, Dettol Soap","Fortune Cooking Oil, Dhara Cooking Oil",2.8666666666666667
-Continental,Coffee,49,174.5,128.94500618046973,135.39225648949323,0.8308627332690763,0.3894190564381745,13,"Odonil Air Freshener, Domex Floor Cleaner, Gowardhan Paneer","Nescafe Coffee, Bru Coffee",3.769230769230769
-Dhara,Cooking Oil,51,435.69,314.86416178194605,330.6073698710434,0.809592850462344,0.3861724871824313,11,"Tata Tea Tea, Mother Dairy Butter, Mother Dairy Milk","Fortune Cooking Oil, Saffola Cooking Oil",4.636363636363637
-Uttam,Sugar,22,494.87,369.9802890695574,388.4793035230352,0.8301167486458472,0.4123263739159828,9,"Go Cheese, Mother Dairy Butter, Tata Tea Tea","Madhur Sugar, Parry's Sugar",2.4444444444444446
-Fortune,Atta,31,295.41,209.42291296060992,219.8940586086404,0.8610900033002635,0.3568228833745704,9,"Dabur Toothpaste, Dhara Cooking Oil, Tata Tea Tea","Aashirvaad Atta, Patanjali Atta",3.4444444444444446
+Product Brand_x,Product Name_x,Quantity Remaining_x,MRP_x,Weighted Cost Price_x,Minimum Price_x,Weighted Shelf Score_x,Viability Score_x,1-15 Days_x,Together Bought With_x,Similar Products_x,Stock wrt Demand_x,Past 15 Day Sales_x
+Saffola,Cooking Oil,43,418.41,308.98140490081676,324.4304751458576,0.8071285197092882,0.3624319796379563,15,"Nestle Chocolates, Ariel Detergent, Dettol Soap","Fortune Cooking Oil, Dhara Cooking Oil",2.8666666666666667,9
+Continental,Coffee,49,174.5,128.94500618046973,135.39225648949323,0.8308627332690763,0.3894190564381745,13,"Odonil Air Freshener, Domex Floor Cleaner, Gowardhan Paneer","Nescafe Coffee, Bru Coffee",3.769230769230769,7
+Dhara,Cooking Oil,51,435.69,314.86416178194605,330.6073698710434,0.809592850462344,0.3861724871824313,11,"Tata Tea Tea, Mother Dairy Butter, Mother Dairy Milk","Fortune Cooking Oil, Saffola Cooking Oil",4.636363636363637,12
+Uttam,Sugar,22,494.87,369.9802890695574,388.4793035230352,0.8301167486458472,0.4123263739159828,9,"Go Cheese, Mother Dairy Butter, Tata Tea Tea","Madhur Sugar, Parry's Sugar",2.4444444444444446,6
+Fortune,Atta,31,295.41,209.42291296060992,219.8940586086404,0.8610900033002635,0.3568228833745704,9,"Dabur Toothpaste, Dhara Cooking Oil, Tata Tea Tea","Aashirvaad Atta, Patanjali Atta",3.4444444444444446,11

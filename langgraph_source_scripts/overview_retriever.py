@@ -20,10 +20,12 @@ class LazyOverviewRetriever:
 
     def _setup_retriever(self) -> BaseRetriever:
         csv_files = [
-            "data_that_matters/top_products.csv",
-            "data_that_matters/bottom_products.csv",
-            "data_that_matters/high_stock_wrt_demand.csv",
-            "data_that_matters/low_stock_wrt_demand.csv",
+            # "data_that_matters/top_products.csv",
+            # "data_that_matters/bottom_products.csv",
+            # "data_that_matters/high_stock_wrt_demand.csv",
+            # "data_that_matters/low_stock_wrt_demand.csv",
+            "data/retrieval_table.csv",
+
         ]
 
         # Load CSV files

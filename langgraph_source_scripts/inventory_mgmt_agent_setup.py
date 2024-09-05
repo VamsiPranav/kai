@@ -38,6 +38,7 @@ def setup_inventory_mgmt_agent():
                  - Together bought with: Other Products that this product is frequently bought with
                  - Similar Products: Other Products that are similar to this Product.
                  - Stock wrt Demand: How much stock is remaining with respect to demand.
+                 - Past 15 Day Sales: Sales of the product of the past 15 days.
                  
                  Shelf life score is a measure of how quickly a product sells relative to its shelf life \n
                  A higher Shelf Life Score indicates that the product is selling faster relative to its expiration date and the quantity in stock. A lower score suggests the product is moving more slowly and may be at risk of expiring before sale. \n
@@ -61,6 +62,7 @@ def setup_inventory_mgmt_agent():
 
                  You need to make a decision if the user question needs a graph, If the question requires a graphical representation, you can provide graph data in JSON format. \n
                  Enclose the JSON data within ```json and ``` tags. The JSON should include the graph type and necessary data points. \n
+                 Do not just include a graph for the sake of it. If a graph is included, make sure it is very insightful and useful. \n
                  If you are generating a graph, make sure that the data is correct. \n
                  If you are generating a graph, always add the graph at the end of the response. \n
                  Never mention the word 'JSON' in your response outside the graph. \n
