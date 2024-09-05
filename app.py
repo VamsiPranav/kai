@@ -55,7 +55,7 @@ def quick_insights():
 
 @app.route('/generate-report', methods=['GET'])
 def generate_report():
-    generate_msg = "Give a complete overview of the store, present all analysis. And show relevant graphs or charts"
+    generate_msg = "Give a complete overview of the store, present all analysis."
     config = {"configurable": {"thread_id": "4"}}
     result = langgraph_app.invoke({"question": generate_msg}, config)
 
